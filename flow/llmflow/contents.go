@@ -14,10 +14,10 @@ import (
 	deepcopy "github.com/tiendc/go-deepcopy"
 	"google.golang.org/genai"
 
-	"github.com/go-a2a/adk-go/internal/xiter"
-	"github.com/go-a2a/adk-go/model"
-	"github.com/go-a2a/adk-go/pkg/py"
-	"github.com/go-a2a/adk-go/types"
+	"github.com/lucasmcclean/adk-go/internal/xiter"
+	"github.com/lucasmcclean/adk-go/model"
+	"github.com/lucasmcclean/adk-go/pkg/py"
+	"github.com/lucasmcclean/adk-go/types"
 )
 
 // ContentLLMRequestProcessor builds the contents for the LLM request.

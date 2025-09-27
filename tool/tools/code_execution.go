@@ -12,9 +12,9 @@ import (
 
 	"google.golang.org/genai"
 
-	"github.com/go-a2a/adk-go/codeexecutor"
-	"github.com/go-a2a/adk-go/tool"
-	"github.com/go-a2a/adk-go/types"
+	"github.com/lucasmcclean/adk-go/codeexecutor"
+	"github.com/lucasmcclean/adk-go/tool"
+	"github.com/lucasmcclean/adk-go/types"
 )
 
 // CodeExecutionTool provides code execution capabilities as a tool.

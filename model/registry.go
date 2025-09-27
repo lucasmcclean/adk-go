@@ -9,7 +9,7 @@ import (
 	"regexp"
 	"sync"
 
-	"github.com/go-a2a/adk-go/types"
+	"github.com/lucasmcclean/adk-go/types"
 )
 
 // init registers the built-in model types.
@@ -32,7 +32,7 @@ func init() {
 			`projects\/.*\/locations\/.*\/publishers\/google\/models\/gemini-.*`,
 		},
 		func(ctx context.Context, apiKey, modelName string) (types.Model, error) {
-			return NewGemini(ctx, apiKey, modelName)
+			return NewGemini(ctx, modelName)
 		},
 	)
 }

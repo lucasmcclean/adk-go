@@ -18,11 +18,11 @@ import (
 	"github.com/google/uuid"
 	"google.golang.org/genai"
 
-	"github.com/go-a2a/adk-go/internal/pool"
-	"github.com/go-a2a/adk-go/internal/xmaps"
-	"github.com/go-a2a/adk-go/pkg/py"
-	"github.com/go-a2a/adk-go/pkg/py/pyasyncio"
-	"github.com/go-a2a/adk-go/types"
+	"github.com/lucasmcclean/adk-go/internal/pool"
+	"github.com/lucasmcclean/adk-go/internal/xmaps"
+	"github.com/lucasmcclean/adk-go/pkg/py"
+	"github.com/lucasmcclean/adk-go/pkg/py/pyasyncio"
+	"github.com/lucasmcclean/adk-go/types"
 )
 
 const (

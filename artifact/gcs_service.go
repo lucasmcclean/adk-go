@@ -20,8 +20,8 @@ import (
 	"google.golang.org/api/option"
 	"google.golang.org/genai"
 
-	"github.com/go-a2a/adk-go/pkg/py"
-	"github.com/go-a2a/adk-go/types"
+	"github.com/lucasmcclean/adk-go/pkg/py"
+	"github.com/lucasmcclean/adk-go/types"
 )
 
 // GCSService represents an artifact service implementation using Google Cloud Storage (GCS).

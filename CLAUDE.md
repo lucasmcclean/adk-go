@@ -421,10 +421,10 @@ import (
     "github.com/bytedance/sonic"
     
     // Internal packages
-    "github.com/go-a2a/adk-go/agent"
-    "github.com/go-a2a/adk-go/model"
-    "github.com/go-a2a/adk-go/tool/tools"
-    "github.com/go-a2a/adk-go/types"
+    "github.com/lucasmcclean/adk-go/agent"
+    "github.com/lucasmcclean/adk-go/model"
+    "github.com/lucasmcclean/adk-go/tool/tools"
+    "github.com/lucasmcclean/adk-go/types"
 )
 ```
 

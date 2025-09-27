@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/go-a2a/adk-go/types"
+	"github.com/lucasmcclean/adk-go/types"
 )
 
 // ModelType represents a type of model.
@@ -58,7 +58,7 @@ func (f *DefaultModelFactory) CreateModel(ctx context.Context, modelName string)
 
 	switch modelType {
 	case ModelTypeGemini:
-		return NewGemini(ctx, f.apiKey, modelName)
+		return NewGemini(ctx, modelName)
 	case ModelTypeClaude:
 		return NewClaude(ctx, modelName, ClaudeModeAnthropic)
 	case ModelTypeClaudeVertexAI:

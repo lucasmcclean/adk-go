@@ -4,18 +4,17 @@
 package model_test
 
 import (
-	"os"
 	"reflect"
 	"testing"
 
-	"github.com/go-a2a/adk-go/model"
-	"github.com/go-a2a/adk-go/types"
+	"github.com/lucasmcclean/adk-go/model"
+	"github.com/lucasmcclean/adk-go/types"
 )
 
 func TestGemini_Generate(t *testing.T) {
 	t.Skip()
 
-	gemini, err := model.NewGemini(t.Context(), os.Getenv(model.EnvGoogleAPIKey), "gemini-2.0-flash")
+	gemini, err := model.NewGemini(t.Context(), "gemini-2.0-flash")
 	if err != nil {
 		t.Fatalf("NewGemini: %v", err)
 	}
@@ -37,7 +36,7 @@ func TestGemini_Generate(t *testing.T) {
 func TestGemini_StreamGenerate_UnarySuccess(t *testing.T) {
 	// t.Skip()
 
-	gemini, err := model.NewGemini(t.Context(), os.Getenv(model.EnvGoogleAPIKey), "gemini-2.0-flash")
+	gemini, err := model.NewGemini(t.Context(), "gemini-2.0-flash")
 	if err != nil {
 		t.Fatalf("NewGemini: %v", err)
 	}
@@ -68,7 +67,7 @@ func TestGemini_StreamGenerate_UnarySuccess(t *testing.T) {
 func TestGemini_StreamGenerate_StreamAggregation(t *testing.T) {
 	t.Skip()
 
-	gemini, err := model.NewGemini(t.Context(), os.Getenv(model.EnvGoogleAPIKey), "gemini-2.0-flash")
+	gemini, err := model.NewGemini(t.Context(), "gemini-2.0-flash")
 	if err != nil {
 		t.Fatalf("NewGemini: %v", err)
 	}

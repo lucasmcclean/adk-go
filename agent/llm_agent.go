@@ -14,12 +14,12 @@ import (
 	"github.com/go-json-experiment/json"
 	"google.golang.org/genai"
 
-	"github.com/go-a2a/adk-go/flow/llmflow"
-	"github.com/go-a2a/adk-go/internal/pool"
-	"github.com/go-a2a/adk-go/internal/xiter"
-	"github.com/go-a2a/adk-go/model"
-	"github.com/go-a2a/adk-go/tool/tools"
-	"github.com/go-a2a/adk-go/types"
+	"github.com/lucasmcclean/adk-go/flow/llmflow"
+	"github.com/lucasmcclean/adk-go/internal/pool"
+	"github.com/lucasmcclean/adk-go/internal/xiter"
+	"github.com/lucasmcclean/adk-go/model"
+	"github.com/lucasmcclean/adk-go/tool/tools"
+	"github.com/lucasmcclean/adk-go/types"
 )
 
 // LLMAgent represents an agent powered by a Large Language Model.

@@ -2,38 +2,44 @@
 
 <div align="center">
 
-An open-source, code-first Go toolkit for building, evaluating, and deploying sophisticated AI agents with flexibility and control.
+An open-source, code-first Go toolkit for building, evaluating, and deploying
+sophisticated AI agents with flexibility and control.
 
-[![Go Reference](https://pkg.go.dev/badge/github.com/go-a2a/adk-go.svg)](https://pkg.go.dev/github.com/go-a2a/adk-go)
-[![Go](https://github.com/go-a2a/adk-go/actions/workflows/go.yml/badge.svg)](https://github.com/go-a2a/adk-go/actions/workflows/test.yml)
+[![Go Reference](https://pkg.go.dev/badge/github.com/lucasmcclean/adk-go.svg)](https://pkg.go.dev/github.com/lucasmcclean/adk-go)
+[![Go](https://github.com/lucasmcclean/adk-go/actions/workflows/go.yml/badge.svg)](https://github.com/lucasmcclean/adk-go/actions/workflows/test.yml)
 
-[Features](#install-adk-go) •
-[Installation](#install-adk-go) •
-[Quick Start](#%EF%B8%8F-architecture) •
-[Architecture](#%EF%B8%8F-architecture) •
-[Examples](#install-adk-go)
+[Features](#install-adk-go) • [Installation](#install-adk-go) •
+[Quick Start](#%EF%B8%8F-architecture) • [Architecture](#%EF%B8%8F-architecture)
+• [Examples](#install-adk-go)
 
 </div>
 
-> [!IMPORTANT]
-> This project is in the alpha stage.
+> [!IMPORTANT] This project is in the alpha stage.
 >
 > Flags, configuration, behavior, and design may change significantly.
 
----
+______________________________________________________________________
 
 ## 🌟 Features
 
-- **⚡️ Fully compatible with the official SDK**: Fully emulates the Python implementation of [adk-python](https://github.com/google/adk-python).
-- **🤖 Multi-Agent Architecture**: Build hierarchical agent systems with LLM, Sequential, Parallel, and Loop agents
-- **🔗 Multi-Provider Support**: Unified interface for Google Gemini, Anthropic Claude, and more via `google.golang.org/genai`
-- **🛠️ Extensible Tools**: Rich ecosystem of tools with automatic function calling and authentication
-- **💾 Memory Systems**: Long-term knowledge storage and retrieval with vector-based search
-- **🔒 Secure Code Execution**: Multiple backends (built-in, container, local) with resource limits
+- **⚡️ Fully compatible with the official SDK**: Fully emulates the Python
+  implementation of [adk-python](https://github.com/google/adk-python).
+- **🤖 Multi-Agent Architecture**: Build hierarchical agent systems with LLM,
+  Sequential, Parallel, and Loop agents
+- **🔗 Multi-Provider Support**: Unified interface for Google Gemini, Anthropic
+  Claude, and more via `google.golang.org/genai`
+- **🛠️ Extensible Tools**: Rich ecosystem of tools with automatic function
+  calling and authentication
+- **💾 Memory Systems**: Long-term knowledge storage and retrieval with
+  vector-based search
+- **🔒 Secure Code Execution**: Multiple backends (built-in, container, local)
+  with resource limits
 - **🌊 Streaming First**: Real-time event streaming with Go 1.23+ iterators
-- **📊 Session Management**: Stateful conversation tracking with three-tier state management
+- **📊 Session Management**: Stateful conversation tracking with three-tier state
+  management
 - **🎯 Smart Planning**: Strategic planning with built-in and ReAct planners
-- **🔐 Authentication**: Multi-scheme auth support (OAuth2, API Key, Basic, Bearer)
+- **🔐 Authentication**: Multi-scheme auth support (OAuth2, API Key, Basic,
+  Bearer)
 - **🎬 Live Mode**: Video/audio-based conversations for supported models
 
 ## 📦 Installation
@@ -47,7 +53,7 @@ An open-source, code-first Go toolkit for building, evaluating, and deploying so
 
 ```bash
 go mod init your-project
-go get github.com/go-a2a/adk-go
+go get github.com/lucasmcclean/adk-go
 ```
 
 ### Environment Setup
@@ -75,10 +81,10 @@ import (
     "fmt"
     "log"
 
-    "github.com/go-a2a/adk-go/agent"
-    "github.com/go-a2a/adk-go/model"
-    "github.com/go-a2a/adk-go/session"
-    "github.com/go-a2a/adk-go/types"
+    "github.com/lucasmcclean/adk-go/agent"
+    "github.com/lucasmcclean/adk-go/model"
+    "github.com/lucasmcclean/adk-go/session"
+    "github.com/lucasmcclean/adk-go/types"
 )
 
 func main() {
@@ -129,10 +135,10 @@ import (
     "fmt"
     "math/rand"
 
-    "github.com/go-a2a/adk-go/agent"
-    "github.com/go-a2a/adk-go/model"
-    "github.com/go-a2a/adk-go/tool/tools"
-    "github.com/go-a2a/adk-go/types"
+    "github.com/lucasmcclean/adk-go/agent"
+    "github.com/lucasmcclean/adk-go/model"
+    "github.com/lucasmcclean/adk-go/tool/tools"
+    "github.com/lucasmcclean/adk-go/types"
 )
 
 // Simple dice rolling function
@@ -175,8 +181,8 @@ package main
 import (
     "context"
 
-    "github.com/go-a2a/adk-go/agent"
-    "github.com/go-a2a/adk-go/model"
+    "github.com/lucasmcclean/adk-go/agent"
+    "github.com/lucasmcclean/adk-go/model"
 )
 
 func main() {
@@ -212,7 +218,8 @@ func main() {
 
 ## 🏗️ Architecture
 
-ADK Go follows a hierarchical, event-driven architecture with strong type safety and extensibility:
+ADK Go follows a hierarchical, event-driven architecture with strong type safety
+and extensibility:
 
 ### Core Components
 
@@ -244,20 +251,28 @@ ADK Go follows a hierarchical, event-driven architecture with strong type safety
 
 ### Agent Types
 
-- **LLMAgent**: Full-featured agents powered by language models with tools, instructions, callbacks, planners, and code execution
-- **SequentialAgent**: Executes sub-agents one after another, supports live mode with `taskCompleted()` flow control
-- **ParallelAgent**: Runs sub-agents concurrently in isolated branches, merges event streams
-- **LoopAgent**: Repeatedly executes sub-agents until escalation or max iterations
+- **LLMAgent**: Full-featured agents powered by language models with tools,
+  instructions, callbacks, planners, and code execution
+- **SequentialAgent**: Executes sub-agents one after another, supports live mode
+  with `taskCompleted()` flow control
+- **ParallelAgent**: Runs sub-agents concurrently in isolated branches, merges
+  event streams
+- **LoopAgent**: Repeatedly executes sub-agents until escalation or max
+  iterations
 
 ### Key Patterns
 
-1. **Event-Driven Streaming**: All operations use `iter.Seq2[*Event, error]` for real-time processing
-2. **Hierarchical Composition**: Agents form trees with parent/child relationships  
-3. **Interface-Driven Design**: Core abstractions in `types/` enable extensibility
-4. **Functional Options**: Configuration via `WithXxx()` functions
-5. **Context Propagation**: Rich context flows through all operations
-6. **Type Safety with Flexibility**: Strong typing while supporting dynamic LLM interactions
-7. **Resource Management**: Proper cleanup with Close() methods throughout
+1. **Event-Driven Streaming**: All operations use `iter.Seq2[*Event, error]` for
+   real-time processing
+1. **Hierarchical Composition**: Agents form trees with parent/child
+   relationships
+1. **Interface-Driven Design**: Core abstractions in `types/` enable
+   extensibility
+1. **Functional Options**: Configuration via `WithXxx()` functions
+1. **Context Propagation**: Rich context flows through all operations
+1. **Type Safety with Flexibility**: Strong typing while supporting dynamic LLM
+   interactions
+1. **Resource Management**: Proper cleanup with Close() methods throughout
 
 ## 🔧 Core Components
 
@@ -456,11 +471,11 @@ adk-go/
 ### Contributing
 
 1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests for new functionality
-5. Run tests and linting
-6. Submit a pull request
+1. Create a feature branch
+1. Make your changes
+1. Add tests for new functionality
+1. Run tests and linting
+1. Submit a pull request
 
 ### Code Style
 
@@ -476,20 +491,28 @@ adk-go/
 
 ## 🤝 Community & Support
 
-- **Issues**: [GitHub Issues](https://github.com/go-a2a/adk-go/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/go-a2a/adk-go/discussions)
+- **Issues**: [GitHub Issues](https://github.com/lucasmcclean/adk-go/issues)
+- **Discussions**:
+  [GitHub Discussions](https://github.com/lucasmcclean/adk-go/discussions)
 
 ## 🔗 Related Projects
 
-This is a Go implementation of the [Agent Development Kit (ADK)](https://github.com/google/adk-python), a toolkit for building, evaluating, and deploying sophisticated AI agents.
+This is a Go implementation of the
+[Agent Development Kit (ADK)](https://github.com/google/adk-python), a toolkit
+for building, evaluating, and deploying sophisticated AI agents.
 
-adk-go follows the same architectural principles as the Python implementation, but with Go's strengths of type safety, performance, and concurrency.
+adk-go follows the same architectural principles as the Python implementation,
+but with Go's strengths of type safety, performance, and concurrency.
 
 ## 🙏 Acknowledgments
 
-- Inspired by the [Agent Development Kit for Python](https://github.com/googleapis/agent-development-kit)
-- Built on top of [google.golang.org/genai](https://pkg.go.dev/google.golang.org/genai) for unified LLM integration
+- Inspired by the
+  [Agent Development Kit for Python](https://github.com/googleapis/agent-development-kit)
+- Built on top of
+  [google.golang.org/genai](https://pkg.go.dev/google.golang.org/genai) for
+  unified LLM integration
 
 ## 📄 License
 
-This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the Apache License 2.0 - see the
+[LICENSE](LICENSE) file for details.

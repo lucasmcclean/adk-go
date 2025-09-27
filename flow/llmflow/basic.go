@@ -9,7 +9,7 @@ import (
 
 	"google.golang.org/genai"
 
-	"github.com/go-a2a/adk-go/types"
+	"github.com/lucasmcclean/adk-go/types"
 )
 
 // BasicLLMRequestProcessor is a simple implementation of LLMFlow that just passes content

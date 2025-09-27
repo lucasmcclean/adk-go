@@ -9,10 +9,10 @@ import (
 
 	"google.golang.org/genai"
 
-	"github.com/go-a2a/adk-go/agent"
-	"github.com/go-a2a/adk-go/flow/llmflow"
-	"github.com/go-a2a/adk-go/session"
-	"github.com/go-a2a/adk-go/types"
+	"github.com/lucasmcclean/adk-go/agent"
+	"github.com/lucasmcclean/adk-go/flow/llmflow"
+	"github.com/lucasmcclean/adk-go/session"
+	"github.com/lucasmcclean/adk-go/types"
 )
 
 func TestAuthLLMRequestProcessor_Run(t *testing.T) {

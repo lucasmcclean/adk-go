@@ -20,9 +20,9 @@ import (
 	"google.golang.org/genai"
 	yaml "gopkg.in/yaml.v3"
 
-	"github.com/go-a2a/adk-go/model"
-	"github.com/go-a2a/adk-go/pkg/logging"
-	"github.com/go-a2a/adk-go/types/aiconv"
+	"github.com/lucasmcclean/adk-go/model"
+	"github.com/lucasmcclean/adk-go/pkg/logging"
+	"github.com/lucasmcclean/adk-go/types/aiconv"
 )
 
 var VertexExtensionHub = map[PrebuiltExtensionType]*aiplatformpb.ImportExtensionRequest{

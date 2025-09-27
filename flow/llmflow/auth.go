@@ -10,10 +10,10 @@ import (
 
 	"github.com/go-json-experiment/json"
 
-	"github.com/go-a2a/adk-go/internal/pool"
-	"github.com/go-a2a/adk-go/internal/xiter"
-	"github.com/go-a2a/adk-go/pkg/py"
-	"github.com/go-a2a/adk-go/types"
+	"github.com/lucasmcclean/adk-go/internal/pool"
+	"github.com/lucasmcclean/adk-go/internal/xiter"
+	"github.com/lucasmcclean/adk-go/pkg/py"
+	"github.com/lucasmcclean/adk-go/types"
 )
 
 // AuthLLMRequestProcessor represents a handles auth information to build the LLM request.

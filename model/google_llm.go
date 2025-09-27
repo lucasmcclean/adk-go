@@ -19,8 +19,8 @@ import (
 	backoff "github.com/cenkalti/backoff/v5"
 	"google.golang.org/genai"
 
-	adk "github.com/go-a2a/adk-go"
-	"github.com/go-a2a/adk-go/types"
+	adk "github.com/lucasmcclean/adk-go"
+	"github.com/lucasmcclean/adk-go/types"
 )
 
 const (
@@ -75,7 +75,7 @@ func NewGemini(ctx context.Context, modelName string, opts ...Option[Gemini]) (*
 		opt(gemini)
 	}
 
-	frameworkLabel := fmt.Sprintf("go-a2a/adk-go/%s", adk.Version)
+	frameworkLabel := fmt.Sprintf("lucasmcclean/adk-go/%s", adk.Version)
 	languageLabel := fmt.Sprintf("go/%s", runtime.Version())
 	versionHeaderValue := frameworkLabel + " " + languageLabel
 

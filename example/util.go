@@ -12,8 +12,8 @@ import (
 	"github.com/go-json-experiment/json"
 	"github.com/go-json-experiment/json/jsontext"
 
-	"github.com/go-a2a/adk-go/internal/pool"
-	"github.com/go-a2a/adk-go/model"
+	"github.com/lucasmcclean/adk-go/internal/pool"
+	"github.com/lucasmcclean/adk-go/model"
 )
 
 // Constant parts of the example string.

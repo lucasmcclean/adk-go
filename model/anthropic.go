@@ -28,8 +28,8 @@ import (
 	"github.com/go-json-experiment/json/jsontext"
 	"google.golang.org/genai"
 
-	"github.com/go-a2a/adk-go/internal/pool"
-	"github.com/go-a2a/adk-go/types"
+	"github.com/lucasmcclean/adk-go/internal/pool"
+	"github.com/lucasmcclean/adk-go/types"
 )
 
 // ClaudeMode represents a mode of the Claude model.

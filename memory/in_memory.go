@@ -10,9 +10,9 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/go-a2a/adk-go/internal/xmaps"
-	"github.com/go-a2a/adk-go/pkg/py"
-	"github.com/go-a2a/adk-go/types"
+	"github.com/lucasmcclean/adk-go/internal/xmaps"
+	"github.com/lucasmcclean/adk-go/pkg/py"
+	"github.com/lucasmcclean/adk-go/types"
 )
 
 // InMemoryService represents an in-memory memory service for prototyping purpose only.

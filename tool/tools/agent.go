@@ -8,8 +8,8 @@ import (
 
 	"google.golang.org/genai"
 
-	"github.com/go-a2a/adk-go/tool"
-	"github.com/go-a2a/adk-go/types"
+	"github.com/lucasmcclean/adk-go/tool"
+	"github.com/lucasmcclean/adk-go/types"
 )
 
 // Agent is a [tool.Tool] that wraps an agent.

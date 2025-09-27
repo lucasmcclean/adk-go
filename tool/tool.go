@@ -9,7 +9,7 @@ import (
 
 	"google.golang.org/genai"
 
-	"github.com/go-a2a/adk-go/types"
+	"github.com/lucasmcclean/adk-go/types"
 )
 
 // Tool represents a base class for all tools.
